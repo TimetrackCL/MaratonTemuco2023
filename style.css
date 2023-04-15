@@ -1,0 +1,965 @@
+/* ---------------------------------------
+
+[Master Stylesheet]
+
+Project:    	Maraton Temuco 2023
+Version:    	1
+Last Change:    12/04/2023
+
+------------------------------------------
+
+[Table of contents]
+
+1. Reset
+2. Root
+3. Global Settings
+4. Color Class Text
+5. Background Class
+6. Grid Custom Style
+7. Buttons/Links Style
+8. Titles/Subtitles Style
+9. Welcu Style
+10. Nav
+11. Hero
+12. Carousel
+13. Count Down
+14. Information Section
+15. Bases Section
+16. Time Start Section
+17. Schedule Section
+18. Sponsor Section
+19. Footer
+20. BreakPoints
+
+-------------------------------------------*/
+
+/*** 
+
+====================================================================
+    1. Reset
+====================================================================
+
+ ***/
+ 
+ * {
+	margin:0px;
+	padding:0px;
+	border:none;
+	outline:none;
+}
+
+
+/*** 
+
+====================================================================
+	2. Root
+====================================================================
+
+***/
+
+:root {
+    --blue: #57B5E5;
+    --orange: #E78622;
+    --greene: #8EC052;
+    --dark--greene: #4c6424;
+    /* --black: #212639; */
+    --black: #2E312F;
+}
+
+
+/*** 
+
+====================================================================
+	3. Global Settings
+====================================================================
+
+***/
+
+body {
+    box-sizing: border-box;
+}
+
+main {
+    color: var(--black);
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 18rem;
+    background-color: var(--black);
+}
+
+.img--responsive {
+    width: 100%;
+    height: auto;
+}
+
+.p__section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.content__center--x {
+    display: flex;
+    justify-content: center;
+}
+
+.content__center--y {
+    display: flex;
+    align-items: center;
+}
+
+.content__center--xy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__end--x {
+    display: flex;
+    justify-content: end;
+}
+
+
+/*** 
+
+====================================================================
+	4. Color Class Text
+====================================================================
+
+***/
+
+.color--blue {
+    color: var(--blue);
+}
+
+.color--orange {
+    color: var(--orange);
+}
+
+.color--greene {
+    color: var(--greene);
+}
+
+.color--black {
+    color: var(--black);
+}
+
+.color--white {
+    color: #fff;
+}
+
+.color--dark-greene {
+    color: var(--dark--greene);
+}
+
+/*** 
+
+====================================================================
+	5. Background Class
+====================================================================
+
+***/
+
+.bg--blue {
+    background-color: var(--blue);
+}
+
+.bg--orange {
+    background-color: var(--orange);
+}
+
+.bg--greene {
+    background-color: var(--greene);
+}
+
+.bg--dark {
+    background-color: var(--black);
+}
+
+.bg--dark-greene {
+    background-color: #6e9135;
+}
+
+.bg--patron {
+    background-image: url(img/pattern-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*** 
+
+====================================================================
+	6. Grid Custom Style
+====================================================================
+
+***/
+
+.grid__two--equal,
+.grid__three--equal,
+.grid__five--equal {
+    display: grid;
+}
+
+.row__gap--small {
+    row-gap: 2rem;
+}
+
+.column-gap--medium {
+    column-gap: 2rem;
+}
+
+.order--2 {
+    order: 2;
+}
+
+.order--1 {
+    order: 1;
+}
+
+/*** 
+
+====================================================================
+	7. Buttons/Links Style
+====================================================================
+
+***/
+
+.button--nav {
+    padding: 0.5rem 2rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+
+}
+
+.button--nav:hover {
+    background-color: transparent;
+    color: var(--orange);
+}
+
+.button--primary {
+    padding: 1rem 4rem;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.button--primary:hover {
+    background-color: transparent;
+    color: var(--orange);
+}
+
+.button--secondary {
+    transition: none 0s ease 0s;
+    line-height: 26px;
+    border-width: 1px;
+    padding: 15px 29px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.button--secondary:hover {
+    background-color: transparent;
+    color: var(--orange);
+}
+
+.link--secondary {
+    font-family: 'Baloo 2', sans-serif;
+    transition: none 0s ease 0s;
+    text-align: center;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--black);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.link--secondary .fa-solid::before {
+    font-size: 3rem;
+    color: var(--orange);
+    margin-right: 2rem;
+}
+
+.link--secondary:hover {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+/*** 
+
+====================================================================
+	8. Titles/Subtitles/Text Style
+====================================================================
+
+***/
+
+.title__small {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+
+.title__section {
+    font-family: 'Baloo 2', cursive;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.font--big {
+    font-size: 5rem;
+    line-height: 5.5rem;
+}
+
+.sub-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.title__deco--1:after {
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    height: 3px;
+    width: 5rem;
+    content: "";
+    background-color: var(--orange);
+}
+
+.title__deco--2:after {
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    height: 3px;
+    width: 5rem;
+    content: "";
+    background-color: var(--greene);
+}
+
+.title__deco--3:after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: -1rem;
+    height: 3px;
+    width: 5rem;
+    content: "";
+    background-color: var(--orange);
+}
+
+.title__deco--4:after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: -1rem;
+    height: 3px;
+    width: 5rem;
+    content: "";
+    background-color: #fff;
+}
+
+.text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #848484;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/*** 
+
+====================================================================
+	9. Welcu Style
+====================================================================
+
+***/
+
+.welcu_embed {
+    font-family: 'Roboto', sans-serif;
+}
+
+.welcu_embed #wlc-table-tickets {
+    border: 10px solid #f2f4f7!important;
+    box-shadow: 0 30px 50px rgba(8,13,62,.15);
+}
+
+/*** 
+
+====================================================================
+	10. Nav
+====================================================================
+
+***/
+.navbar-toggler {
+    border: 2px solid #fff;
+}
+
+
+.navbar-toggler-icon {
+    color: #fff;
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapse {
+    background-color: var(--black);
+    padding: 1rem;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+
+.navbar-nav .nav-link.active {
+    border-bottom: 3px solid var(--orange);
+    color: var(--orange);
+}
+
+.nav-link:hover {
+    color: var(--orange);
+}
+
+/*** 
+
+====================================================================
+	11. Hero
+====================================================================
+
+***/
+
+.hero {
+    height: 70vh;
+    background-color: var(--black);
+}
+
+/*** 
+
+====================================================================
+	12. Carousel
+====================================================================
+
+***/
+
+.carousel-caption {
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.hero__box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.logo--hero {
+    max-width: 150px;
+    height: auto!important;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    margin-bottom: 1rem;
+}
+
+.hero__title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero__date {
+    font-size: 1.3rem;
+}
+
+/*** 
+
+====================================================================
+	13. Count Down
+====================================================================
+
+***/
+
+.count__down {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: -5rem;
+    margin-right: 0;
+}
+
+.box__clock {
+    background-color: var(--greene);
+    padding: 1rem;
+    margin-top: -8rem;
+    z-index: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.count__title {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.count__time {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text--hour {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.clock__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.text--hour-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+/*** 
+
+====================================================================
+	14. Information Section
+====================================================================
+
+***/
+
+.img__information {
+    max-width: 400px;
+    height: auto;
+}
+
+.img__box {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.img__box:before {
+    position: absolute;
+    right: -20px;
+    top: 21px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--orange);
+    content: "";
+    box-shadow: 0 30px 50px rgba(8,13,62,.15);
+    z-index: -1;
+}
+
+.p__top {
+    padding-top: 5rem;
+}
+
+/*** 
+
+====================================================================
+	15. Bases Section
+====================================================================
+
+***/
+
+.bases__box {
+    border: 10px solid #f2f4f7;
+    box-shadow: 0 30px 50px rgba(8,13,62,.15);
+    padding: 2rem;
+}
+
+
+/*** 
+
+====================================================================
+	16. Time Start Section
+====================================================================
+
+***/
+
+.time-start__box {
+    background-color: #fff;
+    padding: 20px 35px 15px;
+    border: 10px solid #f2f4f7;
+    box-shadow: 0 30px 50px rgba(8,13,62,.15);
+    margin-bottom: 3rem;
+}
+
+.time-start__box .text {
+    margin-bottom: 0;
+}
+
+.time-start__box .title__section {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+.time-start__box .title__section i{
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+/*** 
+
+====================================================================
+	17. Schedule Section
+====================================================================
+
+***/
+
+.text--remember   {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #848484;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.text--remember {
+    color: #fff;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+.remember__box {
+    border: 5px dotted #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.remember__item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.remember__i-box {
+    margin: 2rem;
+}
+
+/*** 
+
+====================================================================
+	18. Sponsor Section
+====================================================================
+
+***/
+
+.logo-sponsor {
+    max-width: 200px;
+    margin-bottom: 2rem;
+}
+
+.border-deco {
+    border-bottom: 2px dashed #e5e5e5;
+}
+
+/*** 
+
+====================================================================
+	19. Footer
+====================================================================
+
+***/
+
+footer {
+    background-image: url(img/footer/footer_mobile.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-capa {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo--footer {
+    max-width: 200px;
+    height: auto!important;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    margin-bottom: 2rem;
+}
+
+.RRSS--title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.RRSS__link {
+    background-color: rgba(255,255,255, 0.2);
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.RRSS__link i {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.RRSS__link:hover i{
+    color: orange;
+    text-decoration: none;
+}
+
+/*** 
+
+====================================================================
+	20. BreakPoints
+====================================================================
+
+***/
+
+@media only screen and (min-width: 600px) {
+    .img__box:before {
+        width: 100%;
+        right: -22px;
+    }
+
+    .time-start__box .title__section {
+        flex-direction: row;
+    }
+
+    .mb-4 {
+
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .grid__two--equal {
+        grid-template-columns: 40% 1fr;
+        column-gap: 2rem;
+    }
+
+    .grid__three--equal,
+    .grid__five--equal {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .navbar-brand {
+        max-width: 150px;
+    }
+
+    .logo--menu {
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    }
+
+    .navbar-collapse {
+        flex-grow: initial;
+    }
+    .nav-item {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-weight: 700;
+    }
+
+    .collapse {
+        background-color: transparent;
+    }
+
+    .hero {
+        height: 25vh;
+    }
+
+    .hero-buttons__box {
+        display: flex;
+    }
+
+    .hero__box {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero__date {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .hero__title {
+        text-align: left;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .logo--hero {
+        margin-right: 4rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .box__clock {
+        margin-top: -29rem;
+        flex-direction: row;
+    }
+
+    .count__title__box {
+        max-width: 40%;
+    }
+
+    .count__time {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .clock__box {
+        margin-bottom: 0;
+    }
+
+    .box__clock .count__title {
+        margin-bottom: 0;
+    }
+
+    footer {
+        background-image: url(img/footer/footer_desktop.jpg);
+    }
+
+    .order--2 {
+        order: 1;
+    }
+    
+    .order--1 {
+        order: 2;
+    }   
+    
+    .img__box:before  {
+        height: 100%;
+    }
+
+
+}
+
+@media only screen and (min-width: 1400px) {
+  .grid__five--equal {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      column-gap: 2rem;
+  }
+
+  .box__clock {
+    margin-top: -22rem;
+  }
+
+
+  #bases .grid__two--equal {
+    padding-top: 5rem;
+  }
+
+  .count__down {
+    right: -1rem;
+  }
+
+  .hero__date {
+    font-size: 2rem;
+  }
+
+  .hero__title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .logo--hero {
+    max-width: 350px;
+    height: auto!important;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+    .box__clock {
+        margin-top: -2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .count__down {
+        bottom: -8rem;
+    }
+
+    .hero {
+        height: 48vh;
+    }
+
+}
+
+@media only screen and (min-width: 1900px) {
+    #bases .grid__two--equal {
+        padding-top: 10rem;
+    }
+}
+

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b325f11eca.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Effect -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Maratón Temuco 2023</title>
+
+</head>
+<body data-bs-spy="scroll">
+
+    <nav id="menu" class="navbar fixed-top navbar-expand-md shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="img/logos/Logo_Maraton_Temuco_horizontal-ajustado.png" alt="logo Maraton de Temuco 2023" class="w-100 logo--menu d-none d-md-block">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bases">BASES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#horarios">HORARIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#circuitos">CIRCUITOS</a>
+                    </li>
+                </ul>
+                <a href="#inscription" class="button--nav" >INSCRÍBETE <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <picture>
+                    <source media="(max-width: 599px)" srcset="img/carousel/mita-1_mobile.webp" type="image/webp">
+                    <source media="(min-width: 600px)" srcset="img/carousel/mita-1_desktop.webp" type="image/webp">
+                    <source media="(min-width: 600px)" srcset="img/carousel/mita-1_desktop.jpg" type="image/jpg">
+                    <img 
+                        alt="Maratón Temuco 2023" 
+                        class="d-block w-100" 
+                        src="img/carousel/mita-1__mobile.jpg" 
+                        >
+                </picture>
+                <div class="carousel-caption">      
+                    <div class="hero__box">
+                        <picture>
+                            <img src="img/logos/Logo_Maraton_Temuco_vertical-ai.png" alt="Logo Maratón Temuco 2023" class="logo--hero" data-aos="fade-right">
+                        </picture>
+                        <div data-aos="fade-left">
+                            <h2 class="title__question hero__date">Abril 30, 2023</h2>
+                            <h1 class="title__section hero__title">MARATÓN <br> TEMUCO 2023</h1>
+
+                            <div class="hero-buttons__box">
+                                <a href="#inscription" class="button--primary">
+                                    INSCRÍBETE <i class="fa-solid fa-angle-right"></i>
+                                </a>
+            
+                                <a class="button--secondary d-none d-md-block" href="#bases">
+                                    MÁS INFORMACIÓN <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 599px)" srcset="img/carousel/mita-2_mobile.webp" type="image/webp">
+                    <source media="(min-width: 600px)" srcset="img/carousel/mita-2_desktop.webp" type="image/webp">
+                    <source media="(min-width: 600px)" srcset="img/carousel/mita-2_desktop.jpg" type="image/jpg">
+                    <img 
+                        alt="Maratón Temuco 2023" 
+                        class="d-block w-100" 
+                        src="img/carousel/mita-2__mobile.jpg" 
+                        >
+                </picture>
+                <div class="carousel-caption">      
+                    <div class="hero__box">
+                        <picture>
+                            <img src="img/logos/Logo_Maraton_Temuco_vertical-ai.png" alt="Logo Maratón Temuco 2023" class="logo--hero" data-aos="fade-right">
+                        </picture>
+                        <div data-aos="fade-left">
+                            <h2 class="title__question hero__date">Abril 30, 2023</h2>
+                            <h1 class="title__section hero__title">MARATÓN <br> TEMUCO 2023</h1>
+
+                            <div class="hero-buttons__box">
+                                <a href="#inscription" class="button--primary">
+                                    INSCRÍBETE <i class="fa-solid fa-angle-right"></i>
+                                </a>
+            
+                                <a class="button--secondary d-none d-md-block" href="#bases">
+                                    MÁS INFORMACIÓN <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 599px)" srcset="img/carousel/mita-3__mobile.webp" type="image/webp">
+                    <source media="(min-width: 600px)" srcset="img/carousel/mita-3_desktop.webp" type="image/webp">
+                    <source media="(min-width: 600px)" srcset="img/carousel/mita-3_desktop.jpg" type="image/jpg">
+                    <img 
+                        alt="Maratón Temuco 2023" 
+                        class="d-block w-100" 
+                        src="img/carousel/mita-3__mobile.jpg" 
+                        >
+                </picture>
+                <div class="carousel-caption">      
+                    <div class="hero__box">
+                        <picture>
+                            <img src="img/logos/Logo_Maraton_Temuco_vertical-ai.png" alt="Logo Maratón Temuco 2023" class="logo--hero" data-aos="fade-right">
+                        </picture>
+                        <div data-aos="fade-left">
+                            <h2 class="title__question hero__date">Abril 30, 2023</h2>
+                            <h1 class="title__section hero__title">MARATÓN <br> TEMUCO 2023</h1>
+
+                            <div>
+                                <a href="#inscription" class="button--primary">
+                                    INSCRÍBETE <i class="fa-solid fa-angle-right"></i>
+                                </a>
+            
+                                <a class="button--secondary d-none d-md-block" href="#bases">
+                                    MÁS INFORMACIÓN <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Cuenta regresiva -->
+        <div class="count__down p__section" data-aos="fade-lef">
+            <div class="box__clock">
+                <div class="content__center--y count__title__box">
+                    <h3 class="title__section count__title">La cuenta regresiva ha comenzado para la gran maratón de la ciudad.</h3>
+                </div>
+        
+                <div class="count__time w-100">
+                    <div class="content__center--xy">
+                        <div class="clock__box">
+                            <span id="days" class="text--hour"></span>
+                            <span class="text--hour-text">Días</span>
+                        </div>
+                    </div>
+                    <div class="content__center--xy">
+                        <div class="clock__box">
+                            <span id="hour" class="text--hour"></span>
+                            <span class="text--hour-text">Horas</span>
+                        </div>
+                    </div>
+                    <div class="content__center--xy">
+                        <div class="clock__box">
+                            <span id="min" class="text--hour"></span>
+                            <span class="text--hour-text">Minutos</span>
+                        </div>
+                    </div>
+                    <div class="content__center--xy">
+                        <div class="clock__box">
+                            <span id="seg" class="text--hour"></span>
+                            <span class="text--hour-text">Segundos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- INFO GENERAL -->
+        <section id="bases" class="bg--patron">
+            <div class="container p__section">
+                <div class="grid__two--equal column-gap--medium">
+                    <div class="order--2 p__top" data-aos="fade-right">
+                        <h3 class="title__small color--orange">Información</h3>
+                        <h2 class="title__section title__deco--1">Bienvenidos a la Maratón de Temuco 2023</h2>
+    
+                        <div class="">
+                            <p class="text mb-5">
+                                La Corporación de Deportes Temuco regresa con una nueva versión de la Maratón de Temuco, evento deportivo competitivo/recreativo que recorrerá las principales calles y avenidas de nuestra comuna. La distancia de 42.195 m ha sido medida y certificada por la Federación Atlética de Chile y la World Athletics.
+                            </p>
+        
+                            <div class="content__end--x mb-5">
+                                <a href="#inscription" class="button--primary">INSCRÍBETE <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order--1 content__center--xy" data-aos="fade-left">
+                        <figure class="img__box">
+                            <source srcset="img/informacion.webp" type="image/webp">
+                            <img 
+                                alt="Maratón Temuco 2023" 
+                                class="img--responsive img__information" 
+                                src="img/informacion.jpg" 
+                                >
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="bases__box" data-aos="fade-up">
+                    <div class="content__center--x">
+                        <a href="pdf/BasesMaratonTemuco2023.pdf" target="_blank" class="link--secondary">
+                            <i class="fa-solid fa-file-arrow-down"></i> Bases Generales
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- SCHEDULE -->
+        <section id="horarios" class="bg--greene" data-mdb-toggle="animation" data-mdb-animation-start="onScroll" data-mdb-animation="slide-in-left">
+            <div class="container p__section"> 
+
+                <h3 class="title__small color--white text-center">¿A que hora?</h3>
+                <h2 class="title__section title__deco--4 color--white text-center">Horario de Largadas</h2>
+
+                <div class="time-start__box" data-aos="fade-right">
+                    <h4 class="title__section">
+                        <div class="mb-4 content__center--y">
+                            <i class="fa-solid fa-person-running color--greene"></i> <span class=""> 42 kms</span>
+                        </div>
+                        <div class="mb-4 content__center--y">
+                            <i class="fa-regular fa-clock color--orange"></i>
+                            <span class=""> 8:30 hrs</span>
+                        </div>
+                    </h4>
+                    
+                    <p class="text">
+                        El horario de <b>inicio del evento</b> el día <strong>domingo 30 de abril de 2023</strong>, será a las <b>08:30 Hrs</b>. donde se realizaran los encajonamientos. A partir de la largada del maratón, el <b>tiempo máximo de duración de esta será de 5 horas 00 minutos, cerrándose la llegada y levantándose todos los puntos de control</b>.
+                    </p>
+                </div>
+
+                <div class="time-start__box" data-aos="fade-left">
+                    <h4 class="title__section">
+                        <div class="mb-4 content__center--y">
+                            <i class="fa-solid fa-person-running color--greene"></i> <span class=""> 10 kms</span>
+                        </div>
+                        <div class="mb-4 content__center--y">
+                            <i class="fa-regular fa-clock color--orange"></i>
+                            <span class=""> 9:30 hrs</span>
+                        </div>
+                    </h4>
+                    
+                    <p class="text">
+                        La prueba de <strong>10 kilómetros</strong> comenzará a las <b>09:30 hrs</b>.
+                    </p>
+                </div>
+
+                <div class="time-start__box" data-aos="fade-right">
+                    <h4 class="title__section">
+                        <div class="mb-4 content__center--y">
+                            <i class="fa-solid fa-person-running color--greene"></i> <span class=""> 5 kms</span>
+                        </div>
+                        <div class="mb-4 content__center--y">
+                            <i class="fa-regular fa-clock color--orange"></i>
+                            <span class=""> 9:45 hrs</span>
+                        </div>
+                    </h4>
+                                        
+                    <p class="text">
+                        La prueba de <strong>5 kilómetros</strong> comenzará a las <b>09:45 hrs</b>. Un vehículo de la organización irá al final de cada circuito como cierre y/o trasladando a todo aquel atleta de la competencia que lo requiera.
+                    </p>
+                </div>     
+            </div>
+            
+        </section>
+
+
+
+        <!-- INSCRIPCION -->
+        <section id="inscription" class="bg--patron">
+            <div class="container p__section">
+                <div class="" data-aos="fade-up">
+                    <h3 class="title__small color--orange text-center">¡Obten tu Ticket!</h3>
+                    <h2 class="title__section title__deco--3 text-center">INSCRIPCIONES</h2>
+                </div>
+                <div>
+                    <div id="welcu_embed_sale_5782858056" class="welcu_embed">
+                        <center><img src="https://assets.welcu.com/images/loading.gif" width="50" height="50"></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- RUTAS -->
+        <section id="circuitos" class="bg--greene" data-mdb-toggle="animation" data-mdb-animation-start="onScroll" data-mdb-animation="slide-in-left">
+            <div class="container p__section">
+                <div class="" data-aos="fade-right">
+                    <h3 class="title__small color--white text-center">¿A dónde?</h3>
+                    <h2 class="title__section title__deco--4 color--white text-center">CIRCUITOS</h2>
+                </div>
+                <div class="grid__three--equal row__gap--small column-gap--medium" data-aos="fade-up">
+                    <div class="content__center--x">
+                        <div class="w-100">
+                            <h3 class="sub-title color--white text-center">5 KMS</h3>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1qSDHEdccJ01R_C5Yjbc0EhdDDVAh2_w&ehbc=2E312F" width="350" height="480" class="w-100"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="content__center--x">
+                        <div class="w-100">
+                            <h3 class="sub-title color--white text-center">10 KMS</h3>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1bVt2SJM8t3Bk2UX3dr8-RFHWADEQSaU&ehbc=2E312F" width="350" height="480" class="w-100"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="content__center--x">
+                        <div class="w-100">
+                            <h3 class="sub-title color--white text-center">42 KMS</h3>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1XI57YEMxQTj099595PhLLhwx1VI2M7s&ehbc=2E312F" width="350" height="480" class="w-100"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- SPONSOR -->
+        <section id="sponsor" class="bg--patron">
+            <div class="container p__section" data-aos="fade-up">
+                <h3 class="title__small color--orange text-center">Apoyo</h3>
+                <h2 class="title__section title__deco--3 text-center">PATROCINADORES Y COLABORADORES</h2>
+
+                <div class="grid__three--equal row__gap--small column-gap--medium border--orange" data-aos="fade-right">
+                    <div class="content__center--x">
+                        <div>
+                            <h4 class="sub-title color--orange text-center">INVITA</h4>
+                            <picture>
+                                <img 
+                                    src="img/logos/sponsor/logo-temuco.png" 
+                                    alt="Logo Temuco Municipio Ciudadano" 
+                                    title="Logo Temuco Municipio Ciudadano" 
+                                    class="img--responsive logo-sponsor">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="content__center--x">
+                        <div class="">
+                            <div>
+                                <h4 class="sub-title color--orange text-center">PATROCINA</h4>
+                                <picture>
+                                    <img 
+                                        src="img/logos/sponsor/logo-atletica-chilena.png" 
+                                        alt="Logo Atlética Chilena - Federación Atlética de Chile" 
+                                        title="Logo Atlética Chilena - Federación Atlética de Chile" 
+                                        class="img--responsive logo-sponsor">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__center--x">
+                        <div class="mb-5">
+                            <h4 class="sub-title color--orange text-center">ORGANIZA</h4>
+                            <picture>
+                                <img 
+                                    src="img/logos/sponsor/logo-coorporacion-temuco.PNG" 
+                                    alt="Logo Corporación Municipal de Deportes de Temuco" 
+                                    title="Logo Corporación Municipal de Deportes de Temuco" 
+                                    class="img--responsive logo-sponsor">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-deco mb-5"></div>
+
+                <h4 class="sub-title color--orange text-center">COLABORAN</h4>
+
+                <div class="grid__five--equal row__gap--small column-gap--medium" data-aos="fade-left">
+                    
+                    <div class="content__center--x">
+                        <picture>
+                            <img 
+                                src="img/logos/sponsor/logo-parapanam-2023.png" 
+                                alt="Logo Juegos PanAm | ParapanAm - Santiago 2023" 
+                                title="Logo Juegos PanAm | ParapanAm - Santiago 2023" 
+                                class="img--responsive logo-sponsor">
+                        </picture>
+                    </div>
+
+                    <div class="content__center--x">
+                        <picture>
+                            <img 
+                                src="img/logos/sponsor/logo-u-mayor.PNG" 
+                                alt="Logo Universidad Mayor" 
+                                title="Logo Universidad Mayor" 
+                                class="img--responsive logo-sponsor">
+                        </picture>
+                    </div>
+
+                    <div class="content__center--x">
+                        <picture>
+                            <img 
+                                src="img/logos/sponsor/logo-ufro.png" 
+                                alt="Logo Deportes UFRO" 
+                                title="Logo Deportes UFRO" 
+                                class="img--responsive logo-sponsor">
+                        </picture>
+                    </div>
+
+                    <div class="content__center--x">
+                        <picture>
+                            <img 
+                                src="img/logos/sponsor/logo-teodoro.PNG" 
+                                alt="Logo Teodoro Wickel de la Universidad de la Frontera" 
+                                title="Logo Teodoro Wickel de la Universidad de la Frontera" 
+                                class="img--responsive logo-sponsor">
+                        </picture>
+                    </div>
+
+                    <div class="content__center--x">
+                        <picture>
+                            <img 
+                                src="img/logos/sponsor/logo-uct.png" 
+                                alt="Logo Universidad Católica de Temuco" 
+                                title="Logo Universidad Católica de Temuco" 
+                                class="img--responsive logo-sponsor">
+                        </picture>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-capa">
+            <div class="container p__section">
+                <div class="footer__box">
+                    <picture>
+                        <img 
+                            src="img/logos/Logo_Maraton_Temuco_vertical-ai.png" 
+                            alt="Logo Temuco Municipio Ciudadano" 
+                            title="Logo Temuco Municipio Ciudadano" 
+                            class="img--responsive logo--footer">
+                    </picture>
+    
+                    <div class="">
+                        <h2 class="title__section color--white RRSS--title">Visítanos en:</h2>
+    
+                        <a href="https://www.instagram.com/maratondetemuco/" class="RRSS__link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+                duration: 1000,
+                once: true
+            }
+        );
+    </script>
+
+
+    <!-- Count Down Script -->
+    <script>
+        
+        var countDownDate = new Date("Apr 30, 2023 08:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          
+          var now = new Date().getTime();
+        
+          
+          var distance = countDownDate - now;
+        
+          
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          
+          document.getElementById("days").innerHTML = days;
+
+          document.getElementById("hour").innerHTML = hours;
+
+          document.getElementById("min").innerHTML = minutes;
+
+          document.getElementById("seg").innerHTML = seconds;
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+    </script>
+
+
+    <!-- Welcu Script -->
+    <script type="text/javascript" charset="utf-8">
+        (function() {
+        var embed = document.createElement('script'); embed.type = 'text/javascript'; embed.async = true;
+        embed.src = "https://welcu.com/wolf-events/maratondetemuco/sales/f46b18f627.embed?currency_id=clp&locale=es";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(embed, s);
+        })();
+    </script>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+
+    <!-- Scroll effect Script -->
+    <script>
+        window.addEventListener("scroll", function() {
+            var menu = document.querySelector("#menu");
+
+            menu.classList.toggle("bg--dark", window.scrollY > 0);
+        })
+    </script>
+
+</body>
+</html>
