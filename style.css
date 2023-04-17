@@ -48,6 +48,11 @@ Last Change:    12/04/2023
 	outline:none;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 
 /*** 
 
@@ -425,6 +430,16 @@ main {
 ====================================================================
 
 ***/
+.bg__nav {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.bg__nav--color {
+    background-color: var(--black);
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
 .navbar-toggler {
     border: 2px solid #fff;
 }
@@ -529,7 +544,7 @@ main {
     position: absolute;
     z-index: 1;
     right: 0;
-    bottom: -5rem;
+    bottom: -12rem;
     margin-right: 0;
 }
 
@@ -779,6 +794,15 @@ footer {
     text-decoration: none;
 }
 
+.link__timetrack {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link__timetrack:hover {
+    color: orange;
+}
+
 /*** 
 
 ====================================================================
@@ -797,9 +821,10 @@ footer {
         flex-direction: row;
     }
 
-    .mb-4 {
-
+    .count__down {
+        bottom: -8rem;
     }
+
 
 }
 
@@ -815,22 +840,18 @@ footer {
         column-gap: 2rem;
     }
 
-    .navbar-brand {
-        max-width: 150px;
-    }
-
     .logo--menu {
         filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+        max-width: 200px;
     }
 
-    .navbar-collapse {
-        flex-grow: initial;
-    }
+
     .nav-item {
         padding-left: 1rem;
         padding-right: 1rem;
         font-weight: 700;
     }
+
 
     .collapse {
         background-color: transparent;
@@ -848,6 +869,7 @@ footer {
         flex-direction: row;
         justify-content: center;
     }
+
 
     .hero__date {
         text-align: left;
@@ -867,7 +889,7 @@ footer {
     }
 
     .box__clock {
-        margin-top: -29rem;
+        margin-top: -32rem;
         flex-direction: row;
     }
 
@@ -878,6 +900,7 @@ footer {
     .count__time {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
 
     .clock__box {
         margin-bottom: 0;
@@ -914,6 +937,7 @@ footer {
 
   .box__clock {
     margin-top: -22rem;
+    margin-right: -1rem;
   }
 
 
@@ -921,9 +945,6 @@ footer {
     padding-top: 5rem;
   }
 
-  .count__down {
-    right: -1rem;
-  }
 
   .hero__date {
     font-size: 2rem;
@@ -948,7 +969,7 @@ footer {
     }
 
     .count__down {
-        bottom: -8rem;
+        bottom: -11rem;
     }
 
     .hero {
@@ -957,9 +978,12 @@ footer {
 
 }
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1600px) {
     #bases .grid__two--equal {
         padding-top: 10rem;
     }
-}
 
+    .count__down {
+        bottom: -6rem;
+    }
+}

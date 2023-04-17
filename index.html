@@ -21,26 +21,28 @@
 
     <link rel="stylesheet" href="style.css">
 
+
+    <link rel="icon" type="image/x-icon" href="/img/logos/favicon.png">
+
     <title>Maratón Temuco 2023</title>
 
 </head>
-<body data-bs-spy="scroll">
+<body data-bs-spy="scroll" data-target="#menu" data-offset="0">
 
-    <nav id="menu" class="navbar fixed-top navbar-expand-md shadow-sm">
+
+    <nav id="menu" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="img/logos/Logo_Maraton_Temuco_horizontal-ajustado.png" alt="logo Maraton de Temuco 2023" class="w-100 logo--menu d-none d-md-block">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="img/logos/Logo_Maraton_Temuco_horizontal-ajustado.png" alt="logo Maraton de Temuco 2023" class="w-100 logo--menu d-none d-md-block">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">INICIO</a>
+                        <a class="nav-link active" aria-current="page" href="#hero">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#bases">BASES</a>
+                        <a class="nav-link" href="#bases-generales">BASES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#horarios">HORARIOS</a>
@@ -49,20 +51,22 @@
                         <a class="nav-link" href="#circuitos">CIRCUITOS</a>
                     </li>
                 </ul>
-                <a href="#inscription" class="button--nav" >INSCRÍBETE <i class="fa-solid fa-angle-right"></i></a>
+                <form class="d-flex" role="search">
+                    <a href="#inscription" class="button--nav" >INSCRÍBETE <i class="fa-solid fa-angle-right"></i></a>
+                </form>
             </div>
         </div>
-    </nav>
+      </nav>
 
-    <header class="hero">
+    <header class="hero" id="hero">
 
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <picture>
-                    <source media="(max-width: 599px)" srcset="img/carousel/mita-1_mobile.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="img/carousel/mita-1_desktop.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="img/carousel/mita-1_desktop.jpg" type="image/jpg">
+                    <source media="(max-width: 600px)" srcset="img/carousel/mita-1_mobile.webp" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="img/carousel/mita-1_desktop.webp" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="img/carousel/mita-1_desktop.jpg" type="image/jpg">
                     <img 
                         alt="Maratón Temuco 2023" 
                         class="d-block w-100" 
@@ -93,9 +97,9 @@
               </div>
               <div class="carousel-item">
                 <picture>
-                    <source media="(max-width: 599px)" srcset="img/carousel/mita-2_mobile.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="img/carousel/mita-2_desktop.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="img/carousel/mita-2_desktop.jpg" type="image/jpg">
+                    <source media="(max-width: 600px)" srcset="img/carousel/mita-2_mobile.webp" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="img/carousel/mita-2_desktop.webp" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="img/carousel/mita-2_desktop.jpg" type="image/jpg">
                     <img 
                         alt="Maratón Temuco 2023" 
                         class="d-block w-100" 
@@ -126,9 +130,9 @@
               </div>
               <div class="carousel-item">
                 <picture>
-                    <source media="(max-width: 599px)" srcset="img/carousel/mita-3__mobile.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="img/carousel/mita-3_desktop.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="img/carousel/mita-3_desktop.jpg" type="image/jpg">
+                    <source media="(max-width: 600px)" srcset="img/carousel/mita-3__mobile.webp" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="img/carousel/mita-3_desktop.webp" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="img/carousel/mita-3_desktop.jpg" type="image/jpg">
                     <img 
                         alt="Maratón Temuco 2023" 
                         class="d-block w-100" 
@@ -161,7 +165,7 @@
         </div>
 
         <!-- Cuenta regresiva -->
-        <div class="count__down p__section" data-aos="fade-lef">
+        <div class="count__down p__section">
             <div class="box__clock">
                 <div class="content__center--y count__title__box">
                     <h3 class="title__section count__title">La cuenta regresiva ha comenzado para la gran maratón de la ciudad.</h3>
@@ -199,7 +203,7 @@
     
     <main>
         <!-- INFO GENERAL -->
-        <section id="bases" class="bg--patron">
+        <section id="bases-generales" class="bg--patron">
             <div class="container p__section">
                 <div class="grid__two--equal column-gap--medium">
                     <div class="order--2 p__top" data-aos="fade-right">
@@ -329,21 +333,22 @@
                     <div class="content__center--x">
                         <div class="w-100">
                             <h3 class="sub-title color--white text-center">5 KMS</h3>
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1qSDHEdccJ01R_C5Yjbc0EhdDDVAh2_w&ehbc=2E312F" width="350" height="480" class="w-100"></iframe>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1qSDHEdccJ01R_C5Yjbc0EhdDDVAh2_w&ehbc=2E312F" width="640" height="480" class="w-100"></iframe>
                         </div>
                     </div>
 
                     <div class="content__center--x">
                         <div class="w-100">
                             <h3 class="sub-title color--white text-center">10 KMS</h3>
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1bVt2SJM8t3Bk2UX3dr8-RFHWADEQSaU&ehbc=2E312F" width="350" height="480" class="w-100"></iframe>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1bVt2SJM8t3Bk2UX3dr8-RFHWADEQSaU&ehbc=2E312F" width="640" height="480" class="w-100"></iframe>
                         </div>
                     </div>
 
                     <div class="content__center--x">
                         <div class="w-100">
                             <h3 class="sub-title color--white text-center">42 KMS</h3>
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1XI57YEMxQTj099595PhLLhwx1VI2M7s&ehbc=2E312F" width="350" height="480" class="w-100"></iframe>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1XI57YEMxQTj099595PhLLhwx1VI2M7s&ehbc=2E312F" width="640" height="480" class="w-100"></iframe>
+                            
                         </div>
                     </div>
                 </div>
@@ -360,7 +365,7 @@
                 <h2 class="title__section title__deco--3 text-center">PATROCINADORES Y COLABORADORES</h2>
 
                 <div class="grid__three--equal row__gap--small column-gap--medium border--orange" data-aos="fade-right">
-                    <div class="content__center--x">
+                    <div class="content__center--xy">
                         <div>
                             <h4 class="sub-title color--orange text-center">INVITA</h4>
                             <picture>
@@ -373,7 +378,7 @@
                         </div>
                     </div>
 
-                    <div class="content__center--x">
+                    <div class="content__center--xy">
                         <div class="">
                             <div>
                                 <h4 class="sub-title color--orange text-center">PATROCINA</h4>
@@ -388,7 +393,7 @@
                         </div>
                     </div>
 
-                    <div class="content__center--x">
+                    <div class="content__center--xy">
                         <div class="mb-5">
                             <h4 class="sub-title color--orange text-center">ORGANIZA</h4>
                             <picture>
@@ -408,7 +413,7 @@
 
                 <div class="grid__five--equal row__gap--small column-gap--medium" data-aos="fade-left">
                     
-                    <div class="content__center--x">
+                    <div class="content__center--xy">
                         <picture>
                             <img 
                                 src="img/logos/sponsor/logo-parapanam-2023.png" 
@@ -418,7 +423,7 @@
                         </picture>
                     </div>
 
-                    <div class="content__center--x">
+                    <div class="content__center--xy">
                         <picture>
                             <img 
                                 src="img/logos/sponsor/logo-u-mayor.PNG" 
@@ -428,7 +433,7 @@
                         </picture>
                     </div>
 
-                    <div class="content__center--x">
+                    <div class="content__center--xy">
                         <picture>
                             <img 
                                 src="img/logos/sponsor/logo-ufro.png" 
@@ -438,7 +443,7 @@
                         </picture>
                     </div>
 
-                    <div class="content__center--x">
+                    <div class="content__center--xy">
                         <picture>
                             <img 
                                 src="img/logos/sponsor/logo-teodoro.PNG" 
@@ -448,7 +453,7 @@
                         </picture>
                     </div>
 
-                    <div class="content__center--x">
+                    <div class="content__center--xy">
                         <picture>
                             <img 
                                 src="img/logos/sponsor/logo-uct.png" 
@@ -485,6 +490,15 @@
             </div>
         </div>
     </footer>
+
+
+
+    <!-- CREDITS -->
+    <div class="bg--dark">
+        <p class="text color--white text-center mb-0 py-2">
+            <small>© Desarrollado por <a href="mailto:hola@timetrack.cl" class="link__timetrack">Timetrack</a></small>
+        </p>
+    </div>
 
 
     <!-- AOS Script -->
@@ -556,7 +570,11 @@
         window.addEventListener("scroll", function() {
             var menu = document.querySelector("#menu");
 
-            menu.classList.toggle("bg--dark", window.scrollY > 0);
+            
+            menu.classList.toggle("bg__nav--color", window.scrollY > 0);
+            menu.classList.toggle("bg__nav", window.scrollY == 0);
+            
+
         })
     </script>
 
