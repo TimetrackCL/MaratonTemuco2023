@@ -544,7 +544,7 @@ main {
     position: absolute;
     z-index: 1;
     right: 0;
-    bottom: -12rem;
+    bottom: -13rem;
     margin-right: 0;
 }
 
@@ -822,7 +822,7 @@ footer {
     }
 
     .count__down {
-        bottom: -8rem;
+        bottom: -15rem;
     }
 
 
@@ -936,12 +936,12 @@ footer {
   }
 
   .box__clock {
-    margin-top: -22rem;
+    margin-top: -12rem;
     margin-right: -1rem;
   }
 
 
-  #bases .grid__two--equal {
+  #bases-generales .grid__two--equal {
     padding-top: 5rem;
   }
 
@@ -979,7 +979,7 @@ footer {
 }
 
 @media only screen and (min-width: 1600px) {
-    #bases .grid__two--equal {
+    #bases-generales .grid__two--equal {
         padding-top: 10rem;
     }
 
